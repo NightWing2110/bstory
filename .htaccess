@@ -1,0 +1,13 @@
+RewriteEngine ON
+
+RewriteRule "^lien-he$" "contact.php"
+
+RewriteRule "^trang-chu$" "index.php"
+
+RewriteRule  ^(.*)-([0-9]*)-([0-9]*).html$ detail.php?id=$2&cid=$3
+
+RewriteRule "^(.*)-([0-9]*)$" "cat.php?cat_id=$2"
+
+RewriteRule "^category-([0-9]+)-page-([a-zA-z0-9]+).html$" "cat.php?cat_id=$1&page=$2"
+
+
